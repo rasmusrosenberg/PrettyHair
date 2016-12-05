@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.UI", "PrettyHair\PrettyHair.UI.csproj", "{4ED77CE9-6AB1-4376-82B9-C1DA073417E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.Core", "PrettyHair.Core\PrettyHair.Core.csproj", "{82214339-D41A-40BC-BF7E-3A9DD7B9CD12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.Test", "PrettyHair.Test\PrettyHair.Test.csproj", "{814703B8-CAF9-40E9-8C0C-C37D75C89491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ED77CE9-6AB1-4376-82B9-C1DA073417E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED77CE9-6AB1-4376-82B9-C1DA073417E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED77CE9-6AB1-4376-82B9-C1DA073417E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED77CE9-6AB1-4376-82B9-C1DA073417E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82214339-D41A-40BC-BF7E-3A9DD7B9CD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82214339-D41A-40BC-BF7E-3A9DD7B9CD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82214339-D41A-40BC-BF7E-3A9DD7B9CD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82214339-D41A-40BC-BF7E-3A9DD7B9CD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
