@@ -7,7 +7,7 @@ using PrettyHair.Core.Entities;
 namespace PrettyHair.Test
 {
     [TestClass]
-    public class UnitTests
+    public class ItemTest
     {
         ItemRepository ItemRepo = new ItemRepository();
 
@@ -15,11 +15,6 @@ namespace PrettyHair.Test
         IItem scissor = new Item("Saks",     "En sort saks",  30.00, 1);
         IItem wax     = new Item("Voks",     "80ml hårvoks",  29.00, 8);
         IItem dye     = new Item("Hårfarve", "Rød hårfarve",  109.95, 19);
-
-        public UnitTests()
-        {
-
-        }
 
         [TestMethod]
         public void ItemRepoIsEmpty()
