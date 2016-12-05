@@ -13,23 +13,36 @@ namespace PrettyHair.Core.Entities
         public string Description { get; set; }
         public double Price       { get; set; }
         public int Amount         { get; set; }
-        public int Diller { get; set; }
 
-        public Item(string name, string description, double price)
+        public Item(string name, string description, double price, int amount)
         {
             Name = name;
             Description = description;
             Price = price;
+            Amount = amount;
         }
 
-        public void AdjustPriceByID(int id, double price)
+        public void AdjustPrice(double price)
         {
-            throw new NotImplementedException();
+            Price = price;
         }
 
-        public void AdjustAmountByID(int id, int offset)
+        public void AdjustAmount(int offset)
         {
-            throw new NotImplementedException();
+            if (Amount + offset < 0)
+                throw new ArgumentOutOfRangeException();
+
+            Amount += offset;
+        }
+
+        public void AdjustDescription(string desc)
+        {
+            Description = desc;
+        }
+
+        public override string ToString()
+        {
+            return "[Name: " + Name + " - Description: " + Description + " - Price: " + Price + " - Amount: " + Amount + "]";
         }
     }
 }
