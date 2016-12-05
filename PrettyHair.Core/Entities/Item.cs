@@ -13,6 +13,7 @@ namespace PrettyHair.Core.Entities
         public string Description { get; set; }
         public double Price       { get; set; }
         public int Amount         { get; set; }
+        public int Diller { get; set; }
 
         public Item(string name, string description, double price)
         {
