@@ -18,9 +18,15 @@ namespace PrettyHair.Core.Repositories
             return Items;
         }
 
-        public void AddItem(IItem item)
+        public void CreateItem(IItem item)
         {
-            Items.Add(NextID(), item);
+            // DB
+
+            AddItem(item, NextID());
+        }
+        private void AddItem(IItem item, int ID)
+        {
+            Items.Add(ID, item);
         }
 
         public void RemoveItemByID(int ID)

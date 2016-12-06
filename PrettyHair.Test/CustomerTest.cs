@@ -26,10 +26,10 @@ namespace PrettyHair.Test
         {
             Assert.AreEqual(0, CR.GetAllCustomers().Count);
 
-            CR.AddCustomer(tina);
-            CR.AddCustomer(lone);
-            CR.AddCustomer(ulla);
-            CR.AddCustomer(karl);
+            CR.CreateCustomer(tina);
+            CR.CreateCustomer(lone);
+            CR.CreateCustomer(ulla);
+            CR.CreateCustomer(karl);
 
             Assert.AreEqual(4, CR.GetAllCustomers().Count);
         }

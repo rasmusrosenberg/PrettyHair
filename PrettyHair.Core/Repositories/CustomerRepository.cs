@@ -18,9 +18,11 @@ namespace PrettyHair.Core.Repositories
             return Customers;
         }
 
-        public void AddCustomer(ICustomer customer)
+        public void CreateCustomer(ICustomer customer)
         {
-            Customers.Add(NextID(), customer);
+            // Database call
+
+            AddCustomer(customer, NextID());
         }
 
         public void RemoveCustomerByID(int ID)
@@ -43,9 +45,14 @@ namespace PrettyHair.Core.Repositories
             return Customers[ID];
         }
 
-        public int NextID()
+        private int NextID()
         {
             return ++ID;
+        }
+
+        private void AddCustomer(ICustomer customer, int ID)
+        {
+            Customers.Add(ID, customer);
         }
     }
 }

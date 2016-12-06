@@ -25,17 +25,17 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanAddItem()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
             Assert.AreEqual(1, ItemRepo.GetItems().Count);
 
-            ItemRepo.AddItem(scissor);
+            ItemRepo.CreateItem(scissor);
             Assert.AreEqual(2, ItemRepo.GetItems().Count);
         }
 
         [TestMethod]
         public void CanRemoveItem()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
             Assert.AreEqual(1, ItemRepo.GetItems().Count);
 
             ItemRepo.RemoveItemByID(1);
@@ -45,8 +45,8 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanGetItem()
         {
-            ItemRepo.AddItem(shampoo);
-            ItemRepo.AddItem(scissor);
+            ItemRepo.CreateItem(shampoo);
+            ItemRepo.CreateItem(scissor);
 
             Assert.AreEqual(shampoo, ItemRepo.GetItemByID(1));
             Assert.AreEqual(scissor, ItemRepo.GetItemByID(2));
@@ -55,10 +55,10 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanGetAllItems()
         {
-            ItemRepo.AddItem(shampoo);
-            ItemRepo.AddItem(scissor);
-            ItemRepo.AddItem(wax);
-            ItemRepo.AddItem(dye);
+            ItemRepo.CreateItem(shampoo);
+            ItemRepo.CreateItem(scissor);
+            ItemRepo.CreateItem(wax);
+            ItemRepo.CreateItem(dye);
 
             Assert.AreEqual(4, ItemRepo.GetItems().Count);
         }
@@ -75,7 +75,7 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanAdjustPrice()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
 
             var item = ItemRepo.GetItemByID(1);
 
@@ -89,7 +89,7 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanAdjustAmount()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
 
             var item = ItemRepo.GetItemByID(1);
 
@@ -104,7 +104,7 @@ namespace PrettyHair.Test
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void NegativeAmountNotAllowed()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
 
             var item = ItemRepo.GetItemByID(1);
 
@@ -115,7 +115,7 @@ namespace PrettyHair.Test
         [TestMethod]
         public void CanAdjustDescription()
         {
-            ItemRepo.AddItem(shampoo);
+            ItemRepo.CreateItem(shampoo);
 
             var item = ItemRepo.GetItemByID(1);
 
