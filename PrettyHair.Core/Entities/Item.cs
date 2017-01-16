@@ -12,8 +12,10 @@ namespace PrettyHair.Core.Entities
         public string Name        { get; set; }
         public string Description { get; set; }
         public double Price       { get; set; }
-        public int Amount         { get; set; }
+        public int    Amount      { get; set; }
 
+        public Item() { }
+    
         public Item(string name, string description, double price, int amount)
         {
             Name = name;
@@ -42,7 +44,10 @@ namespace PrettyHair.Core.Entities
 
         public override string ToString()
         {
-            return "[Name: " + Name + " - Description: " + Description + " - Price: " + Price + " - Amount: " + Amount + "]";
+            return "Name: "        + Name + "\t" +
+                   "Description: " + Description + "\t" +
+                   "Price: "       + Price + "\t" +
+                   "Amount: "      + Amount;
         }
     }
 }

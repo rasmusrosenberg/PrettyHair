@@ -9,6 +9,6 @@ namespace PrettyHair.Core.Interfaces
     public interface ICustomer
     {
         string Firstname { get; set; }
-        string Lastname { get; set; }
+        string Lastname  { get; set; }
     }
 }

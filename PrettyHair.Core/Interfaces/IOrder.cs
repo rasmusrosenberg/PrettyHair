@@ -8,9 +8,9 @@ namespace PrettyHair.Core.Interfaces
 {
     public interface IOrder
     {
-        DateTime OrderDate { get; set; }
+        DateTime OrderDate    { get; set; }
         DateTime DeliveryDate { get; set; }
-        int CustomerID { get; set; }
-        bool Processed { get; set; }
+        int      CustomerID   { get; set; }
+        bool     Processed    { get; set; }
     }
 }

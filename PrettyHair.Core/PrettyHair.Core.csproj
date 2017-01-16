@@ -44,6 +44,7 @@
     <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\Orderline.cs" />
+    <Compile Include="Helpers\Validation.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
@@ -54,7 +55,9 @@
     <Compile Include="Repositories\OrderlineRepository.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

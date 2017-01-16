@@ -8,9 +8,9 @@ namespace PrettyHair.Core.Interfaces
 {
     public interface IItem
     {
-
-        double Price { get; set; }
-        int    Amount { get; set; }
+        string Name        { get; set; }
+        double Price       { get; set; }
+        int    Amount      { get; set; }
         string Description { get; set; }
 
         void AdjustPrice(double price);

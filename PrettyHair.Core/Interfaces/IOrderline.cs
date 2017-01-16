@@ -8,8 +8,8 @@ namespace PrettyHair.Core.Interfaces
 {
     public interface IOrderline
     {
-        IItem item { get; set; }
-        int Quantity { get; set; }
-        int OrderID { get; set; }
+        IItem item     { get; set; }
+        int   Quantity { get; set; }
+        int   OrderID  { get; set; }
     }
 }
